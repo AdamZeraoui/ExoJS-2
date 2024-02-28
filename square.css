@@ -1,14 +1,30 @@
 #wrapped{
     display: flex;
     padding-top: 50px;
+    justify-content: center;
 }
 
 .square{
+    display : flex;
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+}
+
+#box {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+.magicBox{
+ 
     display : flex;
     font-family : "Times New Roman";
     font-size: 40px;
     height: 200px;
     width: 200px;
-
     margin: 5px;
+    background-color: rgb(255, 255, 255);
+    border : solid black;
+    justify-content: center;
 }

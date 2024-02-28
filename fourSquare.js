@@ -1,17 +1,39 @@
+let colors = ["#069090","#cc0a0a","#0abd07","yellow"];
 const square = document.querySelector(".square");
 const squareWrapped = document.querySelector("#wrapped");
-square.style.backgroundColor="#069090"
+square.style.backgroundColor= colors[0]
+let index = 0
 
-for (let i = 1; i <4;i++){
-const newSquare = square.cloneNode();
-squareWrapped.appendChild(newSquare); 
-if(i==1){
-    newSquare.style.backgroundColor="#cc0a0a"
-} else if (i==2){
-    newSquare.style.backgroundColor="#0abd07"
-}else if (i==3) {
-    newSquare.style.backgroundColor="yellow"
-}
+
+for(let index = 1; index<colors.length; index++){
+
+
+    square.addEventListener("click",function(){
+        let paragraph = document.getElementById("p");
+        let text = document.createTextNode(colors[index]);
+        colorBox.style.backgroundColor= colors[index]
+        paragraph.appendChild(text);})
+let paragraph = document.getElementById("p");
+let text = document.createTextNode(colors[index]);
+
+    const newSquare = square.cloneNode()
+    squareWrapped.appendChild(newSquare),
+    newSquare.style.backgroundColor=colors[index]
+    newSquare.addEventListener("click",coloredBox);
+
+function coloredBox(){
+
+colorBox.style.backgroundColor=colors[index];
+paragraph.appendChild(text);
+
+
 }
 
-//faire la meme chose pour les couleurs mais avec un tableau et oublier le if ! 
+}
+
+const colorBox = document.querySelector(".magicBox")
+
+// function deleteText(text){
+//     text.remove();
+// }
+// deleteText(text)
