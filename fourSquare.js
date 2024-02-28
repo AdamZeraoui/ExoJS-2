@@ -8,8 +8,6 @@ square.style.backgroundColor= colors[0]
 square.addEventListener("click",function(){
     let index = 0
     colorBox.innerText = colors[index]
-    // let paragraph = document.querySelector("p");
-    // let text = document.createTextNode(colors[index]);
     colorBox.style.backgroundColor= colors[index]
 
 })
@@ -24,15 +22,9 @@ for(let index = 1; index<colors.length; index++){
 
     function coloredBox(){
         colorBox.innerText = colors[index]
-    // let paragraph = document.querySelector("p");
-    // let text = document.createTextNode(colors[index]);
+
     colorBox.style.backgroundColor=colors[index];
 
     }
 
 }
-
-
-// function deleteText(text){
-//     text.remove();
-// }
