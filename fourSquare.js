@@ -7,12 +7,6 @@ let index = 0
 
 for(let index = 1; index<colors.length; index++){
 
-
-    square.addEventListener("click",function(){
-        let paragraph = document.getElementById("p");
-        let text = document.createTextNode(colors[index]);
-        colorBox.style.backgroundColor= colors[index]
-        paragraph.appendChild(text);})
 let paragraph = document.getElementById("p");
 let text = document.createTextNode(colors[index]);
 
